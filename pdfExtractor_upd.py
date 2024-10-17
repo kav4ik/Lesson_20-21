@@ -61,4 +61,4 @@ def regex_strings(directory, region):
     print('Готово!')  # Вказує, що парсинг завершено
 
 # Виклик функції regex_strings з директорією та регіоном
-regex_strings('files', 'Миколаївська')
+regex_strings(r'.\files', 'Миколаївська')
