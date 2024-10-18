@@ -28,11 +28,11 @@ def parse_pdf(pdfFile, regexStrings, region):
                     relation[regexStrings[i][0]] = replaceS
             else:
                 # Якщо збіг не знайдено, виводимо повідомлення та встановлюємо значення за замовчуванням у словнику
-                print(f'Дані відсутні {pdfFile}')
+                print(f'Дані відсутні')
                 relation[regexStrings[i][0]] = 'Дані відсутні'
         except AttributeError:
             # Обробка випадку, коли результат пошуку regex є None (AttributeError при зверненні до .group())
-            print(f'Дані відсутні {pdfFile}')
+            print(f'Дані відсутні')
             relation[regexStrings[i][0]] = 'Дані відсутні'
     
     # Виведення словника розпарсеної інформації
