@@ -8,6 +8,6 @@ pages = convert_from_path('document.pdf', 300)
 
 # Обробляємо кожну сторінку PDF
 for page_number, page_image in enumerate(pages):
-    text = pytesseract.image_to_string(page_image, lang='eng')
+    text = pytesseract.image_to_string(page_image, lang='ukr')
     print(f"Текст зі сторінки {page_number + 1}:")
     print(text)
